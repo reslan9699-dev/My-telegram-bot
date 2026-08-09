@@ -1,0 +1,9 @@
+aiogram>=3.7,<4.0
+SQLAlchemy>=2.0,<2.1
+aiosqlite>=0.20,<1.0
+alembic>=1.13,<2.0
+python-dotenv>=1.0,<2.0
+
+# Optional: switch to PostgreSQL by setting
+# DATABASE_URL=postgresql+asyncpg://user:pass@host:5432/dbname
+# asyncpg>=0.29,<1.0
