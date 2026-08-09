@@ -1,0 +1,11 @@
+services:
+  bot:
+    build: .
+    container_name: file-store-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # Persist the SQLite database across container restarts.
+      - ./bot.db:/app/bot.db
+    command: ["sh", "-c", "alembic upgrade head && python bot.py"]
