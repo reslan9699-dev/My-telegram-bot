@@ -16,7 +16,8 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import ErrorEvent
 
 from config import settings
-from database database import engine, init_db
+from database import engine, init_db
+
 from handlers.admin import admin_router
 from handlers.callbacks import callbacks_router
 from handlers.middlewares import RateLimitMiddleware
